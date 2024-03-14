@@ -1,15 +1,17 @@
 ## Setting Up JWT(JSON Web Tokens) authentication to use in Laravel project
 
 I believe JWT(JSON Web Tokens) authentication is better especially when developing an API using laravel than the default Sanctum which comes with laravel.
-    Some of the benefits of JWT Web Tokens over Sanctum; 
-        1. Stateless Authentication: 
-            JWT tokens are stateless, meaning they don't rely on server-side storage and can be easily scaled across multiple servers. This can be advantageous for microservices architectures or when building APIs consumed by various clients.
-        2. Token-Based Authentication: 
-            JWT tokens are self-contained and contain all necessary information about the user and their permissions. This makes them ideal for token-based authentication in APIs.
-        3. Flexibility: 
-            JWT tokens can carry custom claims and metadata, providing flexibility in encoding user information. They are also widely supported by various programming languages and frameworks.
-        4. Performance: 
-            Since JWT tokens are stateless, they can improve performance by reducing the need for server-side storage and database lookups for session data.
+
+Some of the benefits of JWT Web Tokens over Sanctum: 
+
+1. Stateless Authentication: 
+    JWT tokens are stateless, meaning they don't rely on server-side storage and can be easily scaled across multiple servers. This can be advantageous for microservices architectures or when building APIs consumed by various clients.
+2. Token-Based Authentication: 
+    JWT tokens are self-contained and contain all necessary information about the user and their permissions. This makes them ideal for token-based authentication in APIs.
+3. Flexibility: 
+    JWT tokens can carry custom claims and metadata, providing flexibility in encoding user information. They are also widely supported by various programming languages and frameworks.
+4. Performance: 
+    Since JWT tokens are stateless, they can improve performance by reducing the need for server-side storage and database lookups for session data.
 
 To use JWT in Laravel, you can use the `tymon/jwt-auth` package. Here's how you can install and set it up:
 
