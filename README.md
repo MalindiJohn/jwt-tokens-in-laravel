@@ -1,3 +1,5 @@
+# jwt-tokens-in-laravel
+Just a sample laravel project illustrating on how to use JWT(JSON Web Tokens) authentication in your laravel project over Sanctum
 ## Setting Up JWT(JSON Web Tokens) authentication to use in Laravel project
 
 I believe JWT(JSON Web Tokens) authentication is better especially when developing an API using laravel than the default Sanctum which comes with laravel.
