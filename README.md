@@ -130,3 +130,11 @@ class AuthController extends Controller
 The token returned you can use it when making request to protected endpoints.
 
 Now, you can use JWT for authentication in your Laravel application, and Enjoy secure JWT tokens without worry. 
+
+# To contribute or want to make any change
+- Fork this repository
+- Create a branch for your feature (`git checkout -b my-feature`)
+- Make your changes and commit them (`git commit -m ':heart: My Feature'`)
+- Push to your origin branch (`git push origin my-feature`)
+- Create a pull request
+
