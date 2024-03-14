@@ -67,7 +67,7 @@ class User extends Authenticatable implements JWTSubject
 ],
 ```
 
-6. Then in routes/api.php file wrap your protected routes with 'jwt.auth' as the middleware
+6. Then in `routes/api.php` file wrap your protected routes with `jwt.auth` as the middleware
 
 ```php
 // Example of adding middleware to a specific route
@@ -81,9 +81,11 @@ Route::group(['middleware' => ['jwt.auth']], function () {
 });
 ```
 
-7. In auth controller where you would like to generate token include  'use Tymon\JWTAuth\Facades\JWTAuth';
+7. In `AuthController` where you would like to generate token include  `use Tymon\JWTAuth\Facades\JWTAuth`;
 
 ```php
+
+//other includes ...
 
 //jwt
 use Tymon\JWTAuth\Facades\JWTAuth;
@@ -107,8 +109,7 @@ class AuthController extends Controller
             if (! $token = JWTAuth::attempt($credentials)) {
 
                 // Authentication failed
-                // return response()->json(['error' => 'Unauthorized'], 401);
-                //throw an exception with message 'unauthorized'
+                //throw an exception with message 'Invalid Credentials'
                 throw new \Exception('Invalid Credentials');
 
             }
@@ -118,7 +119,7 @@ class AuthController extends Controller
 
         } catch (\Exception $th) {
 
-            // JWT Exception
+            // Error response 
             return response()->json(['error_message' => 'Could not create token', 'error' => $th->getMessage()], 500);
 
         }
