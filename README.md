@@ -13,6 +13,9 @@ Some of the benefits of JWT Web Tokens over Sanctum:
 4. Performance: 
     Since JWT tokens are stateless, they can improve performance by reducing the need for server-side storage and database lookups for session data.
 
+
+## Getting Started
+
 To use JWT in Laravel, you can use the `tymon/jwt-auth` package. Here's how you can install and set it up:
 
 1. Install the package via composer:
